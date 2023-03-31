@@ -1,5 +1,3 @@
-module "terraform_module_template" {
-  source = "../../"
-
-  example_var = "This is a example value."
+data "google_cloud_identity_group_memberships" "members" {
+  group = var.group
 }

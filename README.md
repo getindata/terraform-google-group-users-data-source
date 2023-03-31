@@ -1,19 +1,11 @@
-# Terraform Module Template
+# Google Group Users Data Source Terraform Module
 
-
-> **Warning**:
-> This is a template document. Remember to **remove** all text in _italics_ and **update** Module name, Repo name and links/badges to the acual name of your GitHub repository/module!!!
-
-<!--- Pick Cloud provider Badge -->
-<!---![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) -->
-<!---![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) -->
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
-<!---![Snowflake](https://img.shields.io/badge/-SNOWFLAKE-249edc?style=for-the-badge&logo=snowflake&logoColor=white) -->
 ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GCP](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
 
 <!--- Replace repository name -->
-![License](https://badgen.net/github/license/getindata/terraform-module-template/)
-![Release](https://badgen.net/github/release/getindata/terraform-module-template/)
+![License](https://badgen.net/github/license/getindata/terraform-google-group-users-data-source/)
+![Release](https://badgen.net/github/release/getindata/terraform-google-group-users-data-source/)
 
 <p align="center">
   <img height="150" src="https://getindata.com/img/logo.svg">
@@ -21,25 +13,16 @@
 </p>
 
 ---
-
-_Brief Description of MODULE:_
-
-* _What it does_
-* _What technologies it uses_
-
-> **Warning**:
-> _When using "Invicton-Labs/deepmerge/null" module - pin `tflint` version to `v0.41.0` in [pre-commit.yaml](.github/workflows/pre-commit.yml) to avoid failing `tflint` checks_
-
+Terraform module for creating users from Google group in Snowflake.
+ 
 ## USAGE
 
 _Example usage of the module - terraform code snippet_
 
 ```terraform
 module "template" {
-  source = "getindata/template/null"
-  # version  = "x.x.x"
-
-  example_var = "foo"
+  source = "getindata/terraform-google-group-users-data-source/google"
+  group = "example group" 
 }
 ```
 
@@ -89,9 +72,7 @@ _Additional information that should be made public, for ex. how to solve known i
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_example_output"></a> [example\_output](#output\_example\_output) | Example output of the module |
+No outputs.
 
 ## Providers
 
