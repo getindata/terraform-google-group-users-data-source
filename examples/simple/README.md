@@ -6,7 +6,6 @@ module "terraform_module_template" {
 
   example_var = "This is a example value."
 }
-
 ```
 
 ## Usage
