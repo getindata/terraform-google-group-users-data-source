@@ -22,7 +22,7 @@ _Example usage of the module - terraform code snippet_
 ```terraform
 module "template" {
   source = "getindata/terraform-google-group-users-data-source/google"
-  group = "example group" 
+  group = "groups/{example_group_id}" 
 }
 ```
 
