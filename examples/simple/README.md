@@ -1,4 +1,4 @@
-# Simple Example
+# Simple Example 
 
 ```terraform
 module "terraform_module_template" {
