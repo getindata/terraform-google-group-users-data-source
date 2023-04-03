@@ -74,7 +74,7 @@ _Additional information that should be made public, for ex. how to solve known i
 
 | Name | Description |
 |------|-------------|
-| <a name="output_users"></a> [users](#output\_users) | List of Users from Google |
+| <a name="output_users"></a> [users](#output\_users) | List of Users from Google group |
 
 ## Providers
 
