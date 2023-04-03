@@ -80,20 +80,20 @@ _Additional information that should be made public, for ex. how to solve known i
 
 | Name | Version |
 |------|---------|
-| <a name="provider_google"></a> [google](#provider\_google) | n/a |
+| <a name="provider_google"></a> [google](#provider\_google) | 4.59.0 |
 
 ## Requirements
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.15.0 |
-| <a name="requirement_null"></a> [null](#requirement\_null) | 3.1.1 |
+| <a name="requirement_google"></a> [google](#requirement\_google) | 4.59.0 |
 
 ## Resources
 
 | Name | Type |
 |------|------|
-| [google_cloud_identity_group_memberships.members](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/cloud_identity_group_memberships) | data source |
+| [google_cloud_identity_group_memberships.members](https://registry.terraform.io/providers/hashicorp/google/4.59.0/docs/data-sources/cloud_identity_group_memberships) | data source |
 <!-- END_TF_DOCS -->
 
 ## CONTRIBUTING
