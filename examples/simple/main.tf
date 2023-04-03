@@ -1,3 +1,4 @@
-data "google_cloud_identity_group_memberships" "members" {
-  group = var.group
+module "terraform_google_group_users_data_source" {
+  source = "../../"
+  group  = "groups/{group_id}"
 }
