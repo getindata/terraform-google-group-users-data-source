@@ -1,6 +1,4 @@
-# Example output from the module
-
-output "example_output" {
-  description = "Example output of the module"
-  value       = one(null_resource.output_input[*].id)
+output "users" {
+  value       = [for u in data.google_cloud_identity_group_memberships.members.memberships : u.preferred_member_key[0].id]
+  description = "List of Users from Google group"
 }
