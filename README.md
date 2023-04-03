@@ -13,7 +13,7 @@
 </p>
 
 ---
-Terraform module for creating users from Google group in Snowflake.
+Terraform module for listing users from Google group.
  
 ## USAGE
 
