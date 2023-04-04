@@ -22,7 +22,8 @@ _Example usage of the module - terraform code snippet_
 ```terraform
 module "this" {
   source = "getindata/terraform-google-group-users-data-source/google"
-  group =  "groups/{example_group_id}" 
+  group  =  "groups/{example_group_id}" 
+  parent =  "customers/{customer_id}"
 }
 ```
 
