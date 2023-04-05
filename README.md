@@ -26,10 +26,6 @@ module "this" {
 }
 ```
 
-## NOTES
-
-_Additional information that should be made public, for ex. how to solve known issues, additional descriptions/suggestions_
-
 ## EXAMPLES
 
 - [Simple](examples/simple) - Basic usage of the module
