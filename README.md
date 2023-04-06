@@ -20,10 +20,10 @@ Terraform module for listing users from Google group.
 _Example usage of the module - terraform code snippet_
 
 ```terraform
-module "group-users-data-source" {
-  source =  "getindata/group-users-data-source/google"
-  group  =  "groups/{example_group_id}" 
-  parent =  "customers/{customer_id}"
+module "terraform_google_group_users_data_source" {
+  source = "../../"
+  group  = "example-group@google.com"
+  parent = "customers/{customer_id}"
 }
 ```
 

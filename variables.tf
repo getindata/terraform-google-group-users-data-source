@@ -1,5 +1,4 @@
-# Example, compulsory input variable
-variable "group" {
+variable "group_email" {
   description = "Group ID"
   type        = string
 }
