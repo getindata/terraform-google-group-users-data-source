@@ -4,3 +4,7 @@ data "google_cloud_identity_groups" "groups" {
 data "google_cloud_identity_group_memberships" "members" {
   group = local.search_in_a_map
 }
+provider "google" {
+  user_project_override = true
+  project               = "gid-seed-project"
+}

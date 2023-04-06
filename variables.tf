@@ -5,4 +5,5 @@ variable "group_email" {
 variable "parent" {
   description = "Parent group ID"
   type        = string
+  default     = "customers/C03qgsz5q"
 }
