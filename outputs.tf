@@ -3,6 +3,6 @@ output "users" {
   description = "List of Users from Google group"
 }
 output "group_name" {
-  value       = one([for g in data.google_cloud_identity_groups.groups.groups : g.group_key[0].id if g.name == local.search_in_a_map])
+  value       = one([for g in data.google_cloud_identity_groups.groups.groups : g.group_key[0].id if g.name == local.group_id])
   description = "Group name"
 }
