@@ -1,4 +1,4 @@
-# Simple Example 
+# Simple Example
 
 ```terraform
 module "terraform_module_template" {
@@ -9,7 +9,8 @@ module "terraform_module_template" {
 ```
 
 ## Usage
-```
+
+```shell
 terraform init
 terraform plan -out tfplan
 terraform apply tfplan

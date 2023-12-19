@@ -1,8 +1,14 @@
 output "users" {
-  value       = [for u in data.google_cloud_identity_group_memberships.members.memberships : u.preferred_member_key[0].id]
-  description = "List of Users from Google group"
+  value       = [for u in data.google_cloud_identity_group_memberships.members.memberships : u.preferred_member_key[0].id if u.type == "USER"]
+  description = "List of Users that belong to Google group"
 }
+
+output "service_accounts" {
+  value       = [for u in data.google_cloud_identity_group_memberships.members.memberships : u.preferred_member_key[0].id if u.type == "SERVICE_ACCOUNT"]
+  description = "List of Service Accounts that belong to Google group"
+}
+
 output "group_name" {
-  value       = one([for g in data.google_cloud_identity_groups.groups.groups : g.group_key[0].id if g.name == local.group_id])
+  value       = data.google_cloud_identity_group_lookup.group.name
   description = "Group name"
 }
