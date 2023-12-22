@@ -1,5 +1,5 @@
 module "google_group_members" {
-  for_each = module.this.enabled ? local.groups : {}
+  for_each = local.groups
 
   source = "../../"
 
