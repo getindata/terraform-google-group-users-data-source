@@ -38,6 +38,7 @@ module "groups_users" {
 |------|-------------|
 | <a name="output_group_members"></a> [group\_members](#output\_group\_members) | Map of google group details and its members |
 | <a name="output_users"></a> [users](#output\_users) | Deduplicated map of google group members (users) in format { email => username } |
+| <a name="output_users_groups"></a> [users\_groups](#output\_users\_groups) | Deduplicated map of google group members (users) in format { email => {user\_name = username, groups = list(groups)}} |
 
 ## Providers
 

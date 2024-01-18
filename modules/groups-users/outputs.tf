@@ -7,3 +7,8 @@ output "users" {
   value       = local.users_map
   description = "Deduplicated map of google group members (users) in format { email => username }"
 }
+
+output "users_groups" {
+  value       = local.users_groups_map
+  description = "Deduplicated map of google group members (users) in format { email => {user_name = username, groups = list(groups)}}"
+}
