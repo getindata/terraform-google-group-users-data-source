@@ -1,10 +1,9 @@
 # Simple Example
 
 ```terraform
-module "terraform_module_template" {
-  source  = "../../"
-
-  example_var = "This is a example value."
+module "terraform_google_group_users_data_source" {
+  source      = "../../"
+  group_email = "group-name@example.com"
 }
 ```
 

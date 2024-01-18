@@ -1,10 +1,12 @@
-# Simple Example
+# Groups-Users submodule Example
 
 ```terraform
-module "terraform_module_template" {
-  source  = "../../"
-
-  example_var = "This is a example value."
+module "terraform_google_group_users_data_source" {
+  source = "../../modules/groups-users"
+  group_emails = [
+    "group-name@example.com",
+    "another-group-name@example.com",
+  ]
 }
 ```
 
